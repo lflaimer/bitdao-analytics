@@ -109,7 +109,6 @@ resource "aws_cloudwatch_event_rule" "analytics" {
   name                = "test-analytics-bitdao-s3"
   description         = "This event is handled by Terraform. Please do not delete/change."
   schedule_expression = "rate(360 minutes)"
-  role_arn            = aws_lambda_function.analytics.arn
 
 }
 
