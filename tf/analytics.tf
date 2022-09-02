@@ -26,9 +26,7 @@ resource "aws_iam_policy" "analytics" {
           "s3:*",
           "s3-object-lambda:*"
         ],
-        "Resource" : [
-          "arn:aws:s3:::${var.bucket_name}:*"
-        ]
+        "Resource" : "*"
       }
     ]
   })
