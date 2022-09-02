@@ -17,7 +17,7 @@ resource "aws_iam_policy" "analytics" {
           "logs:PutLogEvents"
         ],
         "Resource" : [
-          "arn:aws:logs:us-east-1:853732489639:log-group:/aws/lambda/analytics-bitdao-s3:*"
+          "arn:aws:logs:us-east-1:853732489639:log-group:/aws/lambda/test-analytics-bitdao-s3:*"
         ]
       },
       {
