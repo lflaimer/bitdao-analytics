@@ -27,7 +27,7 @@ resource "aws_iam_policy" "analytics" {
                 "s3-object-lambda:*"
             ],
             "Resource": [
-                "arn:aws:s3:::api.bitdao.io:*"
+                "arn:aws:s3:::${var.bucket_name}:*"
             ]
         }
     ]
